@@ -1,42 +1,43 @@
 import mysql.connector
 from usuario import *
 
-lista=[]
-db=mysql.connector.connect(
+db = mysql.connector.connect(
     host="localhost",
     user="root",
     password="",
-    database="proyecto"
+    database="adso30"
 )
 
-cursor=db.cursor()
-numDocumento=int(input('Ingresa tu numero de documento: '))
-nombre=input('Introduzca su nombre: ')
-apellido=input('Introduce tu apellido: ')
-genero=input('Introduce tu genero M o F: ')
-correo=input('Introduce tu correo: ')
+cursor = db.cursor()
 
-datos="INSERT INTO usuario (numDocumento,nombre,apellido,genero,correo) VALUES(%s,%s,%s,%s,%s) "
-valores=(numDocumento,nombre,apellido,genero,correo)
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS usuario (
+        numDocumento INT PRIMARY KEY,
+        nombre VARCHAR(50),
+        apellido VARCHAR(50),
+        genero ENUM('M', 'F'),
+        correo VARCHAR(100) UNIQUE
+    )
+''')
+cursor.execute('ALTER TABLE usuario ADD COLUMN fecha_registro DATE')
+cursor.execute('ALTER TABLE usuario DROP COLUMN fecha_registro')
+cursor.execute('ALTER TABLE usuario DROP COLUMN fecha_registro')
+cursor.execute('ALTER TABLE usuario CHANGE COLUMN apellido apellidos VARCHAR(50)')
+cursor.execute('ALTER TABLE usuario MODIFY COLUMN numDocumento BIGINT')
 
-cursor.execute(datos,valores)
 
-cursor.execute("SELECT * FROM usuario")
-registros=cursor.fetchall
-print(registros)
+numDocumento = int(input('Número de documento: '))
+nombre = input('Nombre: ')
+apellido = input('Apellido: ')
+genero = input('Género (M o F): ')
+correo = input('Correo: ')
 
+
+datos = "INSERT INTO usuario (numDocumento, nombre, apellidos, genero, correo) VALUES ('" + numDocumento + "', '" + nombre + "', '" + apellido + "', '" + genero + "', '" + correo + "')"
+valores = (numDocumento, nombre, apellido, genero, correo)
+cursor.execute(datos, valores)
 db.commit()
-#db.close()
-
-for ap in cursor:
-    ob=Usuario(ap[0],ap[1],ap[2],ap[3],ap[4])
-    lista.append(ob)
-
-for ap in lista:
-    print(ap.getDocumento())
-    print(ap.getNombre())
-    print(ap.getApellido())
-    print(ap.getGenero())
-    print(ap.getCorreo())
 
 
+cursor.close()
+db.close()
