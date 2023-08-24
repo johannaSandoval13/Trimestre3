@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,600;10..48,800&family=Quicksand&display=swap');
+*{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e7eef8;
+}
+header, footer {
+    background-color: #7699D4;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #8FB8ED;
+    margin: 10px 60px;
+}
+img {
+    float: left;
+    margin-right: 20px;
+}
+h1 {
+    margin-top: 0;
+}
+
+#seccion1, #seccion2 {
+    background-color: #889aca; 
+    height: 350px;
+}
+
+#seccion3 {
+    background-color: #889aca;
+    height: 310px;
+}
+
+.secciones{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+.uno,.dos,.tres{
+    background-color: #C2BBF0;
+    padding: 10%;
+    border-radius: 100px;
+    text-decoration: none;
+}
+a:link{
+    color: #9448BC;
+}
+a:visited{
+    color: #480355;
+}
+.uno:hover,.dos:hover,.tres:hover{
+    background-color: #d7d4eb;
+    border: solid 2px #83b1ec;
+    box-shadow: 0 0 4px rgba(216, 112, 147, 0.705);
+}
+.imagenes2{
+    display: flex;
+    flex-direction: row;
+}
+.parrafo{
+    text-align: center;
+}
+.parrafo ul li::marker{
+    color: #889aca;
+}

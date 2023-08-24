@@ -1,0 +1,25 @@
+h1{
+    color: mediumblue;
+}
+#p1{
+    color: blue;
+    font-size: 18pt;
+}
+#p2{
+    color: hotpink;
+    font-size: 10pt;
+}
+.p3{
+    color: darkgray;
+    font-size: 15pt;
+}
+#compartiendo{
+    color: blueviolet;
+}
+.autora, .programa{
+    text-decoration: underline;
+}
+/*Color para cambiar el color de la etiqueta, font-size para cambiar el tamaño de fuente. Es una sintaxis clave: valor
+/*selector de clase: se pone un # antes del nombre puesto a la etiqueta con class
+/*selector de id: se pone un . antes del nombre puesto a la etiqueta con id
+/*varias etiquetas pueden compartir id o class

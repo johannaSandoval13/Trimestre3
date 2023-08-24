@@ -1,0 +1,37 @@
+div {
+    border: 1px solid burlywood;
+    padding: 10px;
+    margin: 5px;
+    background-color: whitesmoke;
+}
+/*static: no puede cambiar su posicionamiento (esta por defecto)*/
+.relative{
+    position: relative;
+    left: 80px;
+}
+/*Relativo: se posiciona en relacion al posicionamiento original*/
+.fixed{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    background-color: antiquewhite;
+    z-index: 10;
+}
+/*fixed: se mostrara sin importar si se hace scroll*/
+.sticky {
+    position: sticky;
+    background-color: blanchedalmond;
+    top: 0;
+}
+/*sticky: se mantiene donde esta, pero en cuento se hace escrol abajo de el se mantiene arriba*/
+/*z-index: sirve para poner elementos sobre otros*/
+.absolute{
+    position: absolute;
+    top: 0px;
+}
+.relative.contenedor{
+    width: 500px;
+    height: 150px;
+    background-color: bisque;
+}
+/*absolute: se mantiene dentro del contenedor en el que esté */

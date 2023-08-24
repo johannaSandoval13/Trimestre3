@@ -1,0 +1,9 @@
+/*p {
+    color: bisque;
+}
+Eso afectaria a todos los parrafos*/
+.contenedor p{
+    color: burlywood;
+}
+/*Asi se hace de forma mas especifica, llamando el contenedor y el elemento de este a afectar, asi no afectara el exterior*/
+/*Anidacion de selectores*/

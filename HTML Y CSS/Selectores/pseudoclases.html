@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo-Clases</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            .hover{
+                width: 300px;
+                height: 200px;
+                background-color: bisque;
+            }
+            .hover:hover/*se utiliza cuando pasa el puntero encima*/{
+                background-color: burlywood;
+            }
+            .listado{
+                padding: 15px;
+                background-color: antiquewhite;
+            }
+            .listado p:first-child /*afecta al primer elemento (en este caso p) del contenedor*/{
+                color: blue;
+            }
+            a:link{/*link no visitado*/
+                color: lightblue;
+            }
+            a:visited{
+                color: deepskyblue;
+            }
+            a:active{
+                color: cadetblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hover">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Qui cumque dolor quis esse neque rerum, facilis velit accusamus blanditiis, 
+            recusandae ea minus perspiciatis corporis saepe totam dolore tempora odio consequuntur.</p>
+        </div>
+        <div class="listado">
+            <p>Parrafo 1</p>
+            <p>Parrafo 2</p>
+            <p>Parrafo 3</p>
+        </div>
+        <div class="enlaces">
+            <a href="http://google.com" target="_blank">Enlace a Google</a>
+            <a href="http://youtube.com" target="_blank">Enlace a youtube</a>
+        </div>
+    </body>
+</html>
+<!--target: blank es para abrir otra pestaña al dar click en un enlace-->
+<!--Las pseudoclases son esos elementos que van despues de el elemento a aplicar estilos y dos puntos-->

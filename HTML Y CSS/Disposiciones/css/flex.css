@@ -1,0 +1,31 @@
+.flex {
+    background-color: burlywood;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    /*flex-wrap: nowrap;*/
+    align-items: center ;
+}
+/*display flex: posiciona los elementos dentro del contenedor*/
+/*justify: posiciona los contenidos en la ubicacion indicada, por defecto 'start'*/
+/*flex wrap: dimensiona los elementos dependiendo del tamaño de la ventana*/
+/*align items dimensiona los elementos, por defecto se dejara el tamaño del contenedor y el item ocupara todo el espacio en funcion del contenido*/
+/*flex direccion: cambia la alineacion de los items*/
+.contenido1{
+    background-color: darkgray;
+    height: 200px;
+    width: 200px;
+    border: solid blanchedalmond;
+}
+.contenido2{
+    background-color: darkgray;
+    height: 200px;
+    width: 200px;
+    border: solid blanchedalmond;
+}
+.contenido3{
+    background-color: darkgray;
+    height: 200px;
+    width: 200px;
+    border: solid blanchedalmond;
+}

@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+.video{
+    width: 100vw;
+    height: 100vw;
+    object-fit: cover;
+    position: fixed;
+}
+.header{
+    height: 100vw;
+    position: relative;
+    /*z-index: 10;*/
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}

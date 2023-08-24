@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+html{
+    font-family: 'Work Sans', sans-serif;
+    font-size: medium;
+    font-weight:500;
+}
+/*usar etiqueta html para "afectar" todo el archivo*/
+/*peso=negrilla*/
+/*importar de google fonts*/

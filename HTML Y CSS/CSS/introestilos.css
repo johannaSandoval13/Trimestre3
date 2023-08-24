@@ -1,0 +1,47 @@
+/*Formas de cambiar colores:*/
+.colores {
+    color: bisque;
+}
+/*colores predeterminados del programa*/
+.hexadecimal {
+    color: #F9E7E7;
+}
+/*colores por codigo hexadecimal (pagina coolors)*/
+.rgb {
+    color: rgb(173, 160, 166)
+}
+.rgba {
+    color: rgba(231, 200, 221, 0.877)
+}
+/*colores por codigo RGB y RGBA (para dar transparencia)*/
+
+/*Fondos:*/
+.fondo {
+    background-color: #E2E4F6;
+}
+.fondoimg {
+    background-image: url("https://wallpapercave.com/wp/wp2819626.jpg");
+    background-position: right bottom;
+    /*posicion de la imagen*/
+}
+/*Tamaños*/
+.ancho { 
+    background-color: rgb(173, 160, 166);
+    width: 100px;   
+}
+.alto{
+    background-color: #dbafc1;
+    height: 300px;
+    width: 200px;
+}
+/*usar pixeles para tamaños no es responsive*/
+.tarjeta {
+    border-style: solid;
+    border-color: #86626E;
+    border-width: 1px;
+    /*border-right: none;*/
+    padding: 10px;
+    /*padding: arriba, abajo y derecha, izquierda*/
+    margin-top: 10px;
+    /*Espacio externo*/
+}

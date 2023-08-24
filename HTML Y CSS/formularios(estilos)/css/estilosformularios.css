@@ -1,0 +1,18 @@
+.input{
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid lightblue;
+}
+.input[type="password"]{
+    color: blueviolet;
+}
+.moderno{
+    border: none;
+    border-bottom: 2px solid burlywood;
+    outline: none;
+    padding: 5px;
+}
+.moderno:focus{
+    border-bottom: 3px solid gray;
+}
