@@ -7,7 +7,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e7eef8;
+background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 header, footer {
     background-color: #7699D4;
@@ -15,12 +16,22 @@ header, footer {
     text-align: center;
     padding: 5px;
 }
+header{
+    position: sticky;
+    top: 0;
+}
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
     background-color: #8FB8ED;
     margin: 10px 60px;
+    text-align: center;
+}
+.container h2{
+    text-decoration: underline;
+    border: solid #d7d4eb;
+    border-radius: 10px;
 }
 img {
     float: left;
@@ -32,14 +43,18 @@ h1 {
 
 #seccion1, #seccion2 {
     background-color: #889aca; 
-    height: 350px;
+    height: 400px;
+    border-radius: 10px;
 }
 
 #seccion3 {
     background-color: #889aca;
     height: 310px;
+    border-radius: 10px;
 }
-
+#seccion2 img{
+    margin: 50px;
+}
 .secciones{
     display: flex;
     flex-direction: row;
@@ -61,6 +76,8 @@ a:visited{
     background-color: #d7d4eb;
     border: solid 2px #83b1ec;
     box-shadow: 0 0 4px rgba(216, 112, 147, 0.705);
+    transition: ease-out;
+    transition-duration: 0.2s;
 }
 .imagenes2{
     display: flex;
@@ -69,6 +86,42 @@ a:visited{
 .parrafo{
     text-align: center;
 }
-.parrafo ul li::marker{
-    color: #889aca;
+
+.parrafo{
+    text-align: left;
+    font-size: x-large;
+}
+.name:hover{
+    background-color: #d7d4eb;
+    border: solid 5px #83b1ec;
+    box-shadow: 0 0 4px rgba(216, 112, 147, 0.705);
+    border-radius: 10px;
+    transition: ease-out;
+    transition-duration: 0.2s;
+}
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    height: 100px;
+}
+div {
+    border-radius: 10px;
+}
+img:hover{
+    box-shadow: 0 0 4px rgba(236, 223, 227, 0.705);
+    border-radius: 10px;
+    transition: scale(1.8);
+    transition-duration: 0.2s;
+}
+p{
+    font-size: larger;
+}
+.container p::first-letter{
+    font-size: xx-large;
+}
+.container, section {
+    margin: 0 auto; /* Establece los márgenes izquierdo y derecho automáticos */
+    max-width: 800px; /* Puedes ajustar este valor según tus necesidades */
 }
