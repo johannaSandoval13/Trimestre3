@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@500&display=swap');
 html{
     background-image: url(../b.jpg);
 }
@@ -28,8 +29,8 @@ header {
   
   nav ul li {
     float: left;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-family: 'Handjet', cursive;
+    font-size: 16pt;
   }
   nav ul li a {
     display: block;
@@ -42,6 +43,49 @@ nav ul li:hover {
 }
 #seccion1{
     background-color: #3d3b3cbd; 
-    height: 400px;
+    height: 700px;
     border-radius: 10px;
+}
+#seccion1 h2 {
+  font-size: 60pt;
+  color: white;
+  margin-bottom: 10px;
+  font-family: 'Handjet', cursive;
+}
+#seccion1 p{
+  font-size: 20pt;
+  color: white;
+  margin-bottom: 10px;
+  font-family: 'Handjet', cursive;
+}
+#seccion1 h2:hover {
+  color: #757aaa; 
+}
+.contenido {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.imagenes1 {
+  display: flex;
+  justify-content: space-around;
+
+}
+.imagenes1 a img{
+  width: 60%;
+}
+.imagenes1 a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+footer {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
 }
