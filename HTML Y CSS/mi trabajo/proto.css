@@ -85,9 +85,9 @@ section {
 }
 .project img:hover,
 .study img:hover {
-    transform: scale(1.1); /* Hace un zoom del 10% en el hover */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Añade una sombra en el hover */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agrega transiciones suaves */
+    transform: scale(1.1); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 #about-me p:first-child:hover {
     transform: rotate(10deg); 
