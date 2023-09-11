@@ -1,127 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,600;10..48,800&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 *{
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30pt;
 }
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-}
-header, footer {
-    background-color: #7699D4;
-    color: #fff;
-    text-align: center;
-    padding: 5px;
-}
-header{
-    position: sticky;
-    top: 0;
-}
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: #8FB8ED;
-    margin: 10px 60px;
-    text-align: center;
-}
-.container h2{
-    text-decoration: underline;
-    border: solid #d7d4eb;
-    border-radius: 10px;
-}
-img {
-    float: left;
-    margin-right: 20px;
-}
-h1 {
-    margin-top: 0;
 }
 
-#seccion1, #seccion2 {
-    background-color: #889aca; 
-    height: 400px;
-    border-radius: 10px;
-}
-
-#seccion3 {
-    background-color: #889aca;
-    height: 310px;
-    border-radius: 10px;
-}
-#seccion2 img{
-    margin: 50px;
-}
-.secciones{
+section {
     display: flex;
-    flex-direction: row;
-    gap: 70px;
-}
-.uno,.dos,.tres{
-    background-color: #C2BBF0;
-    padding: 10%;
-    border-radius: 100px;
-    text-decoration: none;
-}
-a:link{
-    color: #9448BC;
-}
-a:visited{
-    color: #480355;
-}
-.uno:hover,.dos:hover,.tres:hover{
-    background-color: #d7d4eb;
-    border: solid 2px #83b1ec;
-    box-shadow: 0 0 4px rgba(216, 112, 147, 0.705);
-    transition: ease-out;
-    transition-duration: 0.2s;
-}
-.imagenes2{
-    display: flex;
-    flex-direction: row;
-}
-.parrafo{
-    text-align: center;
+    padding: 20px;
+    color: white;
 }
 
-.parrafo{
-    text-align: left;
-    font-size: x-large;
+.left {
+    flex: 1;
+    padding: 20px;
 }
-.name:hover{
-    background-color: #d7d4eb;
-    border: solid 5px #83b1ec;
-    box-shadow: 0 0 4px rgba(216, 112, 147, 0.705);
-    border-radius: 10px;
-    transition: ease-out;
-    transition-duration: 0.2s;
+
+.right {
+    flex: 2;
+    padding: 20px;
 }
-.name{
+
+
+.project,
+.study {
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center; 
-    height: 100px;
+    margin-bottom: 20px;
 }
-div {
-    border-radius: 10px;
+.study{
+    flex-direction: column;
 }
-img:hover{
-    box-shadow: 0 0 4px rgba(236, 223, 227, 0.705);
-    border-radius: 10px;
-    transition: scale(1.8);
-    transition-duration: 0.2s;
+.project img,
+.study img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 10px;
 }
-p{
-    font-size: larger;
+
+
+.social-media {
+    list-style-type: none;
+    padding: 0;
 }
-.container p::first-letter{
-    font-size: xx-large;
+
+.social-media li {
+    margin: 5px 0;
 }
-.container, section {
-    margin: 0 auto; /* Establece los márgenes izquierdo y derecho automáticos */
-    max-width: 800px; /* Puedes ajustar este valor según tus necesidades */
+
+.social-media a {
+    text-decoration: none;
+    color: white;
+}
+
+#about-me img{
+    height: 500px;
+}
+
+#about-me {
+    background-color: #C3A995; 
+    text-align: center;
+    padding: 100px;
+    
+}
+
+#projects {
+    background-color: #8A7968; 
+}
+
+#study {
+    background-color: #6F5E53;
+}
+
+#contact {
+    background-color: #593D3B;
+}
+
+.project img{
+    width: 300px;
+}
+.project img:hover,
+.study img:hover {
+    transform: scale(1.1); /* Hace un zoom del 10% en el hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Añade una sombra en el hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agrega transiciones suaves */
+}
+#about-me p:first-child:hover {
+    transform: rotate(10deg); 
+    transition: transform 0.3s ease;
+}
+#primera{
+    width: 100%;
+    height: auto;
+    transition: background-image 0.3s ease; 
+    cursor: pointer; 
+}
+#primera:hover {
+    background-image: url('undraw_Programmer_re_owql__1_-removebg-preview.png'); 
+    z-index: 10;
+}
+b:hover{
+    color: rgb(166, 219, 166);
+}
+h2{
+    font-size: 50pt;
+}
+ul li a:hover{
+    color: bisque;
+}
+ul li a{
+    font-size: 40pt;
+}
+footer {
+    background-color: #C3A995;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 18px;
 }
