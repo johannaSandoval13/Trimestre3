@@ -1,69 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Johanna's Portfolio</title>
-<link rel="stylesheet" href="proto.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proto.css">
+    <title>Tu Página</title>
 </head>
 <body>
-<header>
-  <h1>Welcome!</h1>
-</header>
-<div class="container">
-  <h2 class="name">♥ I'm Johanna Sandoval ♥</h2>
-  <p>I am a student of ADSO (Analysis and Software Development) currently learning about object-oriented programming, Python, SQL, and HTML.</p>
-  <br>
-  <br>
-  <p>I am currently working on a project related to my studies, always keeping my creative essence and my love for languages. My aim is to become a junior programmer, giving my best effort! Thank you for visiting my portfolio!</p>
-  <br>
-  <br>
-  <div class="secciones">
-  <a href="#container" class="uno">Projects 1</a> 
-  <a href="#seccion1" class="dos">Certifications 2</a> 
-  <a href="#seccion3" class="tres">About Me 3</a>
-  </div>
-</div>
-<br>
-<br>
-<br>
+    <section id="about-me">
+        <div class="left">
+            <img id="primera" src="undraw_Programmer_re_owql-removebg-preview.png" alt="Sobre mí">
+        </div>
+        <div class="right">
+            <p>I am JOHANNA</p>
+            <p>Hey! I'm johanna, an <b>ADSO</b> (Analysis and Software Development) student, I'm currently learning about object-oriented programming, Python, SQL, and HTML.</p>
+            <p>I am currently working on a project related to my studies, always keeping my creative essence and my love for languages. My aim is to become a junior programmer, giving my best effort! Thank you for visiting my portfolio!</p>
+        </div>
+    </section>
 
-<section id="seccion1" class="container">
-  <h2>Projects:</h2>
-  <p>Here are some of the projects I have been a part of:</p>
-  <div class="imagenes1">
-  <a href="https://google.com" target="_blank"><img src="coming.png" alt="imagen" width="230px"></a>
-  <a href="https://google.com" target="_blank"><img src="coming.png" alt="imagen" width="230px"></a>
-  <a href="https://google.com" target="_blank"><img src="coming.png" alt="imagen" width="230px"></a>
-    </div>
-</section>
-<br>
-<br>
-<br>
+    <section id="projects">
+        <div class="left">
+            <h2>Projects</h2>
+        </div>
+        <div class="right">
+            <div class="project">
+                <img src="coming.png" alt="Proyecto 1">
+                <p>Nothing to se here, for now!</p>
+            </div>
+            <div class="project">
+            <img src="coming.png" alt="Proyecto 1">
+            <p>Nothing to see here, for now!</p>
+        </div>
+        <div class="project">
+            <img src="coming.png" alt="Proyecto 1">
+            <p>Nothing to se here, for now!</p>
+        </div>
+        </div>
+    </section>
 
-<section id="seccion2" class="container">
-  <h2>Certifications: </h2>
-  <p>Here are some of my certifications related to Software: </p>
-  <div class="imagenes2">
-    <a href="https://drive.google.com/file/d/1VgbxMotZlhIpioEUneCyHWX3AoVC4lu5/view?usp=sharing" target="_blank"><img src="logo-mision.png" alt="imagen" width="250px"></a>
-    <a href="https://drive.google.com/file/d/1PVDs9gk2FT94UbN9TZwi8mNHPFX07aLb/view?usp=sharing" target="_blank"><img src="sena.png" alt="imagen" width="200px"></a>
-      </div>
-</section>
-<br>
-<br>
-<br>
+    <section id="study">
+        <div class="left">
+            <h2>Certifications</h2>
+        </div>
+        <div class="right">
+            <div class="study">
+                <br>
+                <a href="https://drive.google.com/file/d/1VgbxMotZlhIpioEUneCyHWX3AoVC4lu5/view?usp=sharing" target="_blank"><img src="logo-mision.png" alt="imagen" width="250px"></a>
+                <br>
+                <a href="https://drive.google.com/file/d/1PVDs9gk2FT94UbN9TZwi8mNHPFX07aLb/view?usp=sharing" target="_blank"><img src="sena.png" alt="imagen" width="200px"></a>
+            </div>
+            </div>
 
-<section id="seccion3" class="container">
-  <h2>About me: </h2>
-  <img src="icono.png" alt="icono" width="220px">
-  <div class="parrafo"><p><b>My social media:</b></p>
-    <a href=""><img src="fac.png" alt="" width="50px"></a>
-    <a href=""></a><img src="ins.png" alt="" width="50px"></a>
-    <a href=""></a><img src="red.png" alt="" width="50px"></a>
-</div>
-</section>
-<footer>
-  <p>Johanna Sandoval - 2023</p>
-</footer>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="left">
+            <h2>Contact me!</h2>
+        </div>
+        <div class="right">
+            <ul class="social-media">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>✿ Johanna Sandoval ✿</p>
+    </footer>
+    <script>
+        const primera = document.getElementById('primera');
+    
+        primera.addEventListener('mouseover', () => {
+            primera.src = 'undraw_Programmer_re_owql__1_-removebg-preview.png';
+        });
+    
+        primera.addEventListener('mouseout', () => {
+            primera.src = 'undraw_Programmer_re_owql-removebg-preview.png';
+        });
+    </script>
 </body>
 </html>
+
